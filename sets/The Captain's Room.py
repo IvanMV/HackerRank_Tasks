@@ -1,0 +1,5 @@
+size_of_group = int(input())
+total_rooms = list(map(int, input().split()))
+rooms = set(total_rooms)
+cap_room = (sum(rooms)*size_of_group - sum(total_rooms))/(size_of_group-1)
+print(int(cap_room))
